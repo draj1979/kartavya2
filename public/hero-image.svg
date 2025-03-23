@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="600" viewBox="0 0 800 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="800" height="600" fill="#F3F4F6"/>
+  
+  <!-- Abstract Shapes -->
+  <circle cx="400" cy="300" r="200" fill="#E5E7EB" opacity="0.5"/>
+  <circle cx="400" cy="300" r="150" fill="#D1D5DB" opacity="0.3"/>
+  
+  <!-- Tech Icons -->
+  <g transform="translate(300, 200)">
+    <!-- Code Brackets -->
+    <path d="M50 50 L80 100 L50 150" stroke="#3B82F6" stroke-width="8" stroke-linecap="round"/>
+    <path d="M150 50 L120 100 L150 150" stroke="#3B82F6" stroke-width="8" stroke-linecap="round"/>
+    
+    <!-- Circuit Lines -->
+    <path d="M100 50 L100 150" stroke="#3B82F6" stroke-width="4" stroke-dasharray="10 5"/>
+    <path d="M50 100 L150 100" stroke="#3B82F6" stroke-width="4" stroke-dasharray="10 5"/>
+  </g>
+  
+  <!-- Dots -->
+  <circle cx="200" cy="200" r="10" fill="#3B82F6"/>
+  <circle cx="600" cy="200" r="10" fill="#3B82F6"/>
+  <circle cx="200" cy="400" r="10" fill="#3B82F6"/>
+  <circle cx="600" cy="400" r="10" fill="#3B82F6"/>
+</svg> 
