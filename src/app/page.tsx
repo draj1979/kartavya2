@@ -3,40 +3,56 @@ import Image from 'next/image';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 
-export default function Home() {
+export default function HomePage() {
   return (
     <main className="min-h-screen">
       <Navbar />
       
       {/* Hero Section */}
-      <section className="relative h-screen flex items-center justify-center bg-gradient-to-r from-blue-600 to-blue-800">
-        <div className="container mx-auto px-4 z-10">
-          <div className="flex flex-col md:flex-row items-center justify-between">
-            <div className="text-white md:w-1/2 mb-8 md:mb-0">
-              <h1 className="text-4xl md:text-6xl font-bold mb-6">
+      <section className="pt-32 pb-16 bg-gradient-to-r from-blue-600 to-blue-800">
+        <div className="container mx-auto px-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            <div className="text-white">
+              <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
                 Transforming Ideas into Digital Reality
               </h1>
-              <p className="text-xl mb-8">
-                We are a team of passionate developers and designers creating innovative solutions for businesses worldwide.
+              <p className="text-xl mb-8 text-blue-100">
+                We build innovative web and mobile solutions that help businesses thrive in the digital age.
               </p>
-              <button className="bg-white text-blue-600 px-8 py-3 rounded-full font-semibold hover:bg-blue-50 transition-colors">
-                Get Started
-              </button>
-            </div>
-            <div className="md:w-1/2">
-              <div className="relative w-full h-[400px]">
-                <Image
-                  src="/hero-image.svg"
-                  alt="Hero illustration"
-                  fill
-                  className="object-contain"
-                  priority
-                />
+              <div className="flex flex-wrap gap-4">
+                <button className="bg-white text-blue-600 px-8 py-3 rounded-full font-semibold hover:bg-blue-50 transition-colors">
+                  Get Started
+                </button>
+                <button className="border-2 border-white text-white px-8 py-3 rounded-full font-semibold hover:bg-white/10 transition-colors">
+                  Learn More
+                </button>
               </div>
+              <div className="mt-12 flex items-center gap-8">
+                <div>
+                  <div className="text-3xl font-bold">500+</div>
+                  <div className="text-blue-100">Projects Completed</div>
+                </div>
+                <div>
+                  <div className="text-3xl font-bold">98%</div>
+                  <div className="text-blue-100">Client Satisfaction</div>
+                </div>
+                <div>
+                  <div className="text-3xl font-bold">24/7</div>
+                  <div className="text-blue-100">Support Available</div>
+                </div>
+              </div>
+            </div>
+            <div className="relative h-[400px]">
+              <Image
+                src="/hero-image.svg"
+                alt="Hero Illustration"
+                fill
+                className="object-contain"
+                priority
+              />
             </div>
           </div>
         </div>
-        <div className="absolute inset-0 bg-black opacity-20"></div>
       </section>
 
       {/* Services Section */}
